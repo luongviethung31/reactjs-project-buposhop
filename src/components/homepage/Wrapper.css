@@ -1,0 +1,30 @@
+.policy-card-item{
+    transition: 0.4s;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+.policy-card-item:hover{
+    cursor: pointer;
+    margin-left: 0.5px;
+    box-shadow: 5px 10px 10px 1px rgba(173, 173, 173, 0.63);
+}
+.wrapper-title{
+    margin-top: 80px;
+}
+.container .header-tittle{
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(2, 5, 53);
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.container div.more-info{
+    text-align: center;
+    text-transform: uppercase;
+    color: gray;
+    opacity: 0.8;
+    letter-spacing: 2px;
+    font-size: 15px;
+}

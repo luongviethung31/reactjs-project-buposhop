@@ -1,0 +1,21 @@
+.policy-card{
+    margin-top: 40px;
+}
+.card-container{
+    margin-top: 20px !important;
+}
+.icon-policy{
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.479);
+}
+.icon-area {
+    padding: 20px;
+    text-align: center;
+}
+.text-policy-area{
+    text-align: center;
+    padding: 0 10px ;
+}
+.text-policy-area h6{
+    color: rgba(0, 0, 0, 0.479);
+}
