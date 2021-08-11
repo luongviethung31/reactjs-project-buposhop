@@ -3,7 +3,7 @@
     padding: 0;
     width: 100%;
     height: 70px;
-    background-color: rgb(238, 237, 237);
+    background-color: #c1c9dbce;
     border-bottom: 1px solid rgb(77, 77, 77);
     position: fixed;
     z-index: 200;
@@ -24,7 +24,8 @@
 }
 .Header-bottom{
     display:flex;
-    padding-left: 30px;
+    height: 40px;
+    padding: 0px 30px;
     justify-content: space-between;
     align-items: center;
 }
@@ -33,14 +34,17 @@
 }
 .Header-bottom .menu-list{
     align-items: center;
-    width: 70%;
+    margin: auto;
+    /* width: 70%; */
 }
 .Header-bottom .menu-list .menu-item{
     padding: 0 10px;
 }
-.Header-bottom .menu-list .menu-item a{
+.menu-item a{
     text-decoration: none;
+    font-size: 17px;
     color: black;
+    text-transform: uppercase;
 }
 .Header-bottom .menu-list .menu-item a:hover{
     text-decoration: none;
@@ -51,12 +55,63 @@
     position: relative;
     top: -15px;
 }
+
 .search-item{
-    width: 100px;
-    padding-right: 30px;
+    margin: auto  0px;
     align-items: center;
 }
-.search-item .icon-item{
+.search-item .search-text-box{
+    border: none;
+    margin-right:10px;
+    font-size: 13px;
+    padding: 5px;
+    height: 30px;
+    width: 200px;
+}
+.search-item .icon-list{
     align-items: center;
     padding-right: 10px;
+    margin: auto;
+}
+/* .search-item .icon-list .bag{
+    position: relative;
+} */
+
+/* DROPDOWN */
+.icon-menu .btn-group-dropdown .items-menu-box{
+    background-color: #c1c9dbce;
+}
+.btn-group-dropdown .btn-dropdown:focus{
+    box-shadow: none;
+    border: 1px solid black;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+
+/* responsive */
+@media only screen and (min-width: 860px){
+    .icon-menu{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1070px){
+    .search-text-box{
+        display: none;
+    }
+  }
+@media only screen and (max-width: 860px){
+    .menu-list{
+        display: none;
+    }
+    .icon-menu{
+        display: inline;
+    }
+    .logo{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 50px;
+        top:15px;
+    }
 }
