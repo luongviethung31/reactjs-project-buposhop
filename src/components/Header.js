@@ -5,11 +5,13 @@
 import React, { useState, Component } from 'react';
 import logo from '../images/logoBupo.png';
 import { List, ListInlineItem } from 'reactstrap';
-import { HiOutlineShoppingBag, HiSearch } from 'react-icons/hi';
+import { HiSearch } from 'react-icons/hi';
+import { IoCartOutline} from 'react-icons/io5';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { CartContext } from '../contexts/Cart';
 
 
 const MenuIcon = (props) => {
@@ -35,18 +37,6 @@ const MenuIcon = (props) => {
 };
 
 class Header extends Component {
-    // constructor(){
-    //     super();
-    //     this.state={
-    //         amount: 0
-    //     }
-    //     this.addToBag = this.addToBag.bind(this);
-    // }
-    // addToBag(){
-    //     this.setState({
-    //         amount: this.state.amount++
-    //     });
-    // }
     render() {
         return (
             <div className='Header'>
@@ -71,9 +61,13 @@ class Header extends Component {
                         <List type="inline" className='icon-list'>
                             <input type='text' className='search-text-box' placeholder='Search...' />
                             <ListInlineItem className='icon-item loupe'><a href='#'><HiSearch color="black" size="1.2em" /></a></ListInlineItem>
-                            <ListInlineItem className='icon-item bag'><a href='#'><HiOutlineShoppingBag color="black" size="1.2em" /></a></ListInlineItem>
-                            {/* <ListInlineItem className='icon-item loupe'><a href='#'><img className='loupe' src={loupe} width={20}/></a></ListInlineItem>
-                    <ListInlineItem className='icon-item bag'><a href='#'><img className='bag' src={bag} width={20}/></a></ListInlineItem> */}
+                            <ListInlineItem className='icon-item cart'><a href='#'>
+                                <IoCartOutline color="black" size="1.2em" /></a>
+                                <CartContext.Consumer>
+                                    {({product})=><span className="amount-product">{product.length}</span>}
+                                </CartContext.Consumer>
+                            </ListInlineItem>
+                            
                         </List>
                     </div>
                 </div>

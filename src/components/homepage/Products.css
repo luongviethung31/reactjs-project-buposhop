@@ -226,11 +226,11 @@ img.women-collection{
     background-color: #4f87b8;
     margin-left: 1px;
 }
-.buy-container .add-bag{
+.buy-container .add-cart{
     color: #8dabc6;
     transition: 0.4s;
 }
-.buy-container .add-bag:hover{
+.buy-container .add-cart:hover{
     color: #4f87b8;
     margin-right: 1px;
 }

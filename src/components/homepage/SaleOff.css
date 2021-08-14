@@ -1,0 +1,60 @@
+.sale-off-banner{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.sale-off-banner .content-saleoff{
+    /* height: 420px; */
+    background-color: rgb(206, 206, 199);
+}
+/* countdown-box */
+.content-saleoff .countdown-box{
+    padding-top: 30px;
+    padding-left: 80px;
+}
+.title-saleoff{
+    width:200px;
+    border-bottom:1px solid rgb(92, 88, 88);
+}
+.title-saleoff h2{
+    color: rgb(92, 88, 88);
+}
+.slogen-saleoff{
+    padding-top: 30px;
+}
+.slogen-saleoff h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(82, 80, 80);
+    font-weight: lighter;
+}
+
+.countdown-items{
+    margin-top: 40px;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+.countdown-items .countdown-item-list{
+    width: 20%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 10px;
+}
+.countdown-items .countdown-item-list h5{
+    margin: 0;
+}
+.countdown-box .banner-btn:hover{
+    background-color: rgb(12, 12, 12);
+}
+
+
+.sale-off-banner .content-saleoff .image-sale-off .bg-image{
+    padding: 20px;
+    background-size: cover;
+    width: 100%;
+}
+.countdown-box .banner-btn{
+    margin: 30px 100px;
+    background-color: rgba(0, 0, 0, 0.692);
+    width: 100px;
+}

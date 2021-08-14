@@ -3,12 +3,13 @@ import {
   Card, CardImg, CardText, CardBody,
   CardTitle, Button, Row, Col
 } from 'reactstrap';
-import { IoBagAddOutline } from 'react-icons/io5';
+import { MdAddShoppingCart } from 'react-icons/md';
 import './Products.css';
 import Wrapper from './Wrapper';
 import mencollection from './image-bg/mencollection.png';
 import womencollection from './image-bg/womencollection.png';
 import newarrivals from './image-bg/new-arrivals.jpg';
+import { CartContext } from '../../contexts/Cart';
 
 class Products extends Component {
   constructor() {
@@ -85,7 +86,7 @@ class Products extends Component {
                 {
                   products.map((product) => {
                     return (
-                      <Col sm='6' md='6' lg='3' className='colum'>
+                      <Col sm='6' md='6' lg='3' className='colum'  key={product.id}>
                         <Card className='product-item'>
                           <div className='overflow'>
                             <CardImg top width="100%"
@@ -95,11 +96,13 @@ class Products extends Component {
                           </div>
                           <CardBody className='cardtext-container'>
                             <CardTitle className='product-name' tag="h5">{product.name}</CardTitle>
-                            <CardText className="product-cost" mb-0>{product.cost}</CardText>
+                            <CardText className="product-cost"  >{product.cost}</CardText>
                           </CardBody>
                           <div className='buy-container'>
                             <Button className='buy-now'>Buy Now</Button>
-                            <IoBagAddOutline className='add-bag' size='2em'></IoBagAddOutline>
+                            <CartContext.Consumer>
+                              {({addToCart})=>(<MdAddShoppingCart className='add-cart' size='1.5em' onClick={()=>addToCart(product)}></MdAddShoppingCart>)}
+                            </CartContext.Consumer>
                           </div>
                         </Card>
                       </Col>

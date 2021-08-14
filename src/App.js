@@ -5,16 +5,25 @@ import React from 'react';
 import Products from './components/homepage/Products';
 import Footer from './components/Footer';
 import StorePolicy from './components/homepage/StorePolicy';
+import { CartProvider } from './contexts/Cart';
+import ScrollToTop from './components/ScrollToTop';
+import SaleOff from './components/homepage/SaleOff';
+
+const day = new Date("August 20, 2021 12:00:00");
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <SlideIntroduce slides = {items}/>
-      <Products/>
-      <StorePolicy/>
-      <Footer/>
-    </div>
+    <CartProvider>
+      <div className="App">
+        <Header/>
+        <SlideIntroduce slides = {items}/>
+        <Products/>
+        <SaleOff date={Date.now()+100000000}/>
+        <StorePolicy/>
+        <Footer/>
+        <ScrollToTop/>
+      </div>
+    </CartProvider>
   );
 }
 

@@ -13,7 +13,7 @@ class SlideIntroduce extends Component {
     this.forward = this.forward.bind(this);
     this.backward = this.backward.bind(this);
     this.updateDimensions = this.updateDimensions.bind(this);
-    this.myRef = React.createRef();
+    // this.myRef = React.createRef();
   }
   getNewSlideIndex(step){
     const slideIndex = this.state.current;
@@ -39,7 +39,6 @@ class SlideIntroduce extends Component {
   }
   updateDimensions(){
     this.SlidesElement.style.height = `${this.SlidesElement.offsetWidth / (12/5)}px`;
-    console.log("runUpdate");
   }
   getCurrentIndex(index){
     this.setState({
@@ -61,13 +60,13 @@ class SlideIntroduce extends Component {
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateDimensions);
     if (this.automaticInterval) clearInterval(this.automaticInterval);
-  } 
+  }
   componentDidUpdate(){
-    console.log("reset");
     if (this.automaticInterval) clearInterval(this.automaticInterval);
     this.automaticInterval = setInterval(()=>{
       this.forward();
     },5000);
+
   }
   //RENDER
   render(){
