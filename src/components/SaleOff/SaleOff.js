@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Countdown, { zeroPad } from "react-countdown";
-import saleoff from './image-bg/saleoff-bg.png';
+import saleoff from '../image-bg/saleoff-bg.png';
 import './SaleOff.css';
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => {

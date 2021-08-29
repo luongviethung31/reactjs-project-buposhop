@@ -3,7 +3,7 @@
 //xem lại useState
 //Chưa add to bag
 import React, { useState, Component } from 'react';
-import logo from '../images/logoBupo.png';
+import logo from '../../images/logoBupo.png';
 import { List, ListInlineItem } from 'reactstrap';
 import { HiSearch } from 'react-icons/hi';
 import { IoCartOutline} from 'react-icons/io5';
@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-import { CartContext } from '../contexts/Cart';
+import { CartContext } from '../../contexts/Cart';
 
 
 const MenuIcon = (props) => {

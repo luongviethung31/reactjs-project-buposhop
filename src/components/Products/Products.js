@@ -5,10 +5,10 @@ import {
 } from 'reactstrap';
 import { MdAddShoppingCart } from 'react-icons/md';
 import './Products.css';
-import Wrapper from './Wrapper';
-import mencollection from './image-bg/mencollection.png';
-import womencollection from './image-bg/womencollection.png';
-import newarrivals from './image-bg/new-arrivals.jpg';
+import Wrapper from '../Subject/Subject';
+import mencollection from '../image-bg/mencollection.png';
+import womencollection from '../image-bg/womencollection.png';
+import newarrivals from '../image-bg/new-arrivals.jpg';
 import { CartContext } from '../../contexts/Cart';
 
 class Products extends Component {

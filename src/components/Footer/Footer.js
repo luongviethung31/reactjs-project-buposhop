@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Footer.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import  logo from '../images/logoBupo.png';
+import  logo from '../../images/logoBupo.png';
 
 class Footer extends Component {
     render() {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Wrapper.css';
+import './Subject.css';
 class Wrapper extends Component {
     constructor(props) {
         super(props);

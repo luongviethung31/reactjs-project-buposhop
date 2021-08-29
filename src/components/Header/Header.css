@@ -34,27 +34,32 @@
 .Header-bottom .menu-list{
     align-items: center;
     margin: auto;
-    /* width: 70%; */
+    height: 100%;
+}
+.Header-bottom .menu-list .menu-item{
+    line-height: 40px;
 }
 .Header-bottom .menu-list .menu-item{
     padding: 0 10px;
 }
 .menu-item a{
     text-decoration: none;
-    font-size: 17px;
+    font-size: 19px;
     color: black;
+    font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Exo 2', sans-serif;
 }
 .Header-bottom .menu-list .menu-item a:hover{
     text-decoration: none;
-    color: lightblue;
+    color: rgb(7 84 114);
+    border-bottom: 2px solid rgb(7 84 114);
 }
 .logo{
     height: 50px;
     position: relative;
     top: -15px;
 }
-
 .search-item{
     margin: auto  0px;
     align-items: center;
