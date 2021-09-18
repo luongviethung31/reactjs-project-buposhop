@@ -21,7 +21,7 @@ function App() {
     <CartProvider>
       <div className="App">
         <Header/>
-        <Route path='/' exact component={Hompage}></Route>
+        <Route path='/reactjs-project-buposhop' exact component={Hompage}></Route>
         <Route path='/top' exact render={() => <CategoryDetails allProducts={allProducts} title='top'/>}></Route>
         <Route path='/bottom' exact render={() => <CategoryDetails allProducts={allProducts} title='bottom'/>}></Route>
         <Route path='/outerwear' exact render={() => <CategoryDetails allProducts={allProducts} title='outerwear'/>}></Route>

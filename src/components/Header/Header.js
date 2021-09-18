@@ -25,12 +25,12 @@ const MenuIcon = (props) => {
                 <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
             </DropdownToggle>
             <DropdownMenu className='items-menu-box'>
-                <DropdownItem className='menu-item'><a href='#'>TOPS</a></DropdownItem>
-                <DropdownItem className='menu-item'><a href='#'>BOTTOMS</a></DropdownItem>
-                <DropdownItem className='menu-item'><a href='#'>OUTERWEAR</a></DropdownItem>
-                <DropdownItem className='menu-item'><a href='#'>SALE</a></DropdownItem>
-                <DropdownItem className='menu-item'><a href='#'>Sizechart</a></DropdownItem>
-                <DropdownItem className='menu-item'><a href='#'>about us</a></DropdownItem>
+                <DropdownItem className='menu-item'><Link to='/top'>TOPS</Link></DropdownItem>
+                <DropdownItem className='menu-item'><Link to='/bottom'>BOTTOMS</Link></DropdownItem>
+                <DropdownItem className='menu-item'><Link to='/outerwear'>OUTERWEAR</Link></DropdownItem>
+                <DropdownItem className='menu-item'><Link to='/top'>SALE</Link></DropdownItem>
+                <DropdownItem className='menu-item'><Link to='/top'>SIZE CHART</Link></DropdownItem>
+                <DropdownItem className='menu-item'><Link to='/top'>ABOUT US</Link></DropdownItem>
             </DropdownMenu>
         </ButtonDropdown>
     </div>
@@ -49,7 +49,7 @@ class Header extends Component {
                     {/*-------------- DROPDOWN ------------ */}
                     <MenuIcon/>
 
-                    <Link to='/'><img className="logo" src={logo} alt="logo" /></Link>
+                    <Link to='/reactjs-project-buposhop'><img className="logo" src={logo} alt="logo" /></Link>
                     <List type="inline" className='menu-list'>
                         <ListInlineItem className='menu-item'><Link to='/top'>TOPS</Link></ListInlineItem>
                         <ListInlineItem className='menu-item'><Link to='/bottom'>BOTTOMS</Link></ListInlineItem>
