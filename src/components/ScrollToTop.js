@@ -20,29 +20,18 @@ class ScrollToTop extends Component {
 
     componentDidMount() {
         window.addEventListener("scroll",()=>{
-            console.log(window.pageYOffset);
-            if(window.pageYOffset>500 && this.state.isVisible==false){
-                console.log(window.pageYOffset);
+            if(window.pageYOffset>500 && this.state.isVisible===false){
                 this.setState({
                     isVisible: true
                 })
             }
-            if(window.pageYOffset<=500 && this.state.isVisible==true){
+            if(window.pageYOffset<=500 && this.state.isVisible===true){
                 this.setState({
                     isVisible:false
                 })
             }
         }
         )
-    }
-
-
-    componentDidUpdate(prevProps, prevState) {
-
-    }
-
-    componentWillUnmount() {
-
     }
 
     render() {

@@ -12,6 +12,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import { CartContext } from '../../contexts/Cart';
+import {Link} from "react-router-dom";
 
 
 const MenuIcon = (props) => {
@@ -48,14 +49,14 @@ class Header extends Component {
                     {/*-------------- DROPDOWN ------------ */}
                     <MenuIcon/>
 
-                    <a href='#'><img className="logo" src={logo} alt="logo" /></a>
+                    <Link to='/'><img className="logo" src={logo} alt="logo" /></Link>
                     <List type="inline" className='menu-list'>
-                        <ListInlineItem className='menu-item'><a href='#'>TOPS</a></ListInlineItem>
-                        <ListInlineItem className='menu-item'><a href='#'>BOTTOMS</a></ListInlineItem>
-                        <ListInlineItem className='menu-item'><a href='#'>OUTERWEAR</a></ListInlineItem>
-                        <ListInlineItem className='menu-item'><a href='#'>SALE</a></ListInlineItem>
-                        <ListInlineItem className='menu-item'><a href='#'>SIZE CHART</a></ListInlineItem>
-                        <ListInlineItem className='menu-item'><a href='#'>ABOUT US</a></ListInlineItem>
+                        <ListInlineItem className='menu-item'><Link to='/top'>TOPS</Link></ListInlineItem>
+                        <ListInlineItem className='menu-item'><Link to='/bottom'>BOTTOMS</Link></ListInlineItem>
+                        <ListInlineItem className='menu-item'><Link to='/outerwear'>OUTERWEAR</Link></ListInlineItem>
+                        <ListInlineItem className='menu-item'><Link to='/top'>SALE</Link></ListInlineItem>
+                        <ListInlineItem className='menu-item'><Link to='/top'>SIZE CHART</Link></ListInlineItem>
+                        <ListInlineItem className='menu-item'><Link to='/top'>ABOUT US</Link></ListInlineItem>
                     </List>
                     <div className='search-item'>
                         <List type="inline" className='icon-list'>

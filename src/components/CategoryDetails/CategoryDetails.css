@@ -1,0 +1,39 @@
+.sort-box{
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid black ;
+}
+.dropdown-area{
+    text-align: right !important;
+}
+.title-type-product h3{
+    text-transform: uppercase;
+}
+
+.categoryDetails-box{
+    padding-top: 200px;
+}
+.dropdown-button{
+    font-size: 14px !important;
+    color: black !important;
+    background-color: white !important;
+}
+.dropdown-button:focus{
+    box-shadow: none !important;
+    background-color: #ebebeba1 !important;
+}
+.menu-item{
+    font-size: 12px;
+}
+.menu-item:focus{
+    background-color: darkgrey !important;
+}
+.dropdown-menu{
+    min-width: auto !important;
+}
+
+.all-product{
+    margin-top: 40px;
+}
+/* fontawesome */
