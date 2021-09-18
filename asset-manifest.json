@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/reactjs-project-buposhop/static/css/main.b7f5ab73.chunk.css",
-    "main.js": "/reactjs-project-buposhop/static/js/main.7eadbf23.chunk.js",
-    "main.js.map": "/reactjs-project-buposhop/static/js/main.7eadbf23.chunk.js.map",
+    "main.js": "/reactjs-project-buposhop/static/js/main.406501d1.chunk.js",
+    "main.js.map": "/reactjs-project-buposhop/static/js/main.406501d1.chunk.js.map",
     "runtime-main.js": "/reactjs-project-buposhop/static/js/runtime-main.a0b41b0c.js",
     "runtime-main.js.map": "/reactjs-project-buposhop/static/js/runtime-main.a0b41b0c.js.map",
     "static/css/2.4be38407.chunk.css": "/reactjs-project-buposhop/static/css/2.4be38407.chunk.css",
-    "static/js/2.ffc9d2e6.chunk.js": "/reactjs-project-buposhop/static/js/2.ffc9d2e6.chunk.js",
-    "static/js/2.ffc9d2e6.chunk.js.map": "/reactjs-project-buposhop/static/js/2.ffc9d2e6.chunk.js.map",
+    "static/js/2.e1a696e7.chunk.js": "/reactjs-project-buposhop/static/js/2.e1a696e7.chunk.js",
+    "static/js/2.e1a696e7.chunk.js.map": "/reactjs-project-buposhop/static/js/2.e1a696e7.chunk.js.map",
     "static/js/3.6b7fc513.chunk.js": "/reactjs-project-buposhop/static/js/3.6b7fc513.chunk.js",
     "static/js/3.6b7fc513.chunk.js.map": "/reactjs-project-buposhop/static/js/3.6b7fc513.chunk.js.map",
     "index.html": "/reactjs-project-buposhop/index.html",
     "static/css/2.4be38407.chunk.css.map": "/reactjs-project-buposhop/static/css/2.4be38407.chunk.css.map",
     "static/css/main.b7f5ab73.chunk.css.map": "/reactjs-project-buposhop/static/css/main.b7f5ab73.chunk.css.map",
-    "static/js/2.ffc9d2e6.chunk.js.LICENSE.txt": "/reactjs-project-buposhop/static/js/2.ffc9d2e6.chunk.js.LICENSE.txt",
+    "static/js/2.e1a696e7.chunk.js.LICENSE.txt": "/reactjs-project-buposhop/static/js/2.e1a696e7.chunk.js.LICENSE.txt",
     "static/media/mencollection.dc1d3dff.png": "/reactjs-project-buposhop/static/media/mencollection.dc1d3dff.png",
     "static/media/new-arrivals.661f2c9b.jpg": "/reactjs-project-buposhop/static/media/new-arrivals.661f2c9b.jpg",
     "static/media/saleoff-bg.6fdfef4a.png": "/reactjs-project-buposhop/static/media/saleoff-bg.6fdfef4a.png",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.a0b41b0c.js",
     "static/css/2.4be38407.chunk.css",
-    "static/js/2.ffc9d2e6.chunk.js",
+    "static/js/2.e1a696e7.chunk.js",
     "static/css/main.b7f5ab73.chunk.css",
-    "static/js/main.7eadbf23.chunk.js"
+    "static/js/main.406501d1.chunk.js"
   ]
 }
