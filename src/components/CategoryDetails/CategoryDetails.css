@@ -1,5 +1,5 @@
 .sort-box{
-    margin: 0 15px;
+    margin: 0 30px;
     display: flex;
     justify-content: space-between;
     border-bottom:1px solid black ;
@@ -32,8 +32,117 @@
 .dropdown-menu{
     min-width: auto !important;
 }
-
-.all-product{
-    margin-top: 40px;
+/* ------*/
+.main-content{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 20px;
 }
-/* fontawesome */
+.all-product{
+    width: 100%;
+}
+.main-col{
+    width: calc(100% - 280px);
+    width: -moz-calc(100% - 280px);
+    width: -webkit-calc(100% - 280px);
+}
+.filter-col{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    width: 280px;
+    background-color: #f2f5f7;
+    position: relative;
+    left: 0;
+}
+.filter-block{
+    padding: 20px;
+}
+.filter-title{
+    border-bottom: 1px solid gray;
+    padding: 25px 0;
+}
+.filter-title-text{
+}
+.filter-option{
+    padding: 25px 0;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+}
+.filter-option-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.option-title{
+    height: 100%;
+}
+.triangle-down{
+    height: 0px;
+    width: 0px;
+    border-top:5px solid black ;
+    border-left:5px solid rgba(0, 0, 0, 0) ;
+    border-right:5px solid rgba(0, 0, 0, 0) ;
+}
+.triangle-up{
+    height: 0px;
+    width: 0px;
+    border-bottom:5px solid black ;
+    border-left:5px solid rgba(0, 0, 0, 0) ;
+    border-right:5px solid rgba(0, 0, 0, 0) ;
+}
+/* -------------------------- */
+.filter-option-contents{
+    /* height: 0;
+    transition: height 0.4s;
+    overflow: hidden; */
+    display: block;
+    animation: display 1s;
+}
+.filter-option-contents.activeFilter{
+    /* height: inherit; */
+    display: block;
+    animation: display 1s;
+}
+.filter-option-list{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.list-option-item a{
+    text-decoration: none;
+    color: gray ;
+}
+ul.color-filter{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+li.color-list-item{
+    margin-right: 10px;
+}
+.color-item{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: none;
+}
+.color-item:focus{
+    border: 3px solid rgb(255, 255, 255) !important;
+    box-shadow: 0 0 0 2px #000!important;
+}
+@media only screen and (max-width: 974px){
+    .main-col{
+        width: 100%;
+    }
+    .filter-col{
+        left: -320px;
+        display: none;
+    }
+}
+@keyframes display {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
