@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/reactjs-project-buposhop/static/css/main.2dfb094c.chunk.css",
+    "main.css": "/reactjs-project-buposhop/static/css/main.0afc3bae.chunk.css",
     "main.js": "/reactjs-project-buposhop/static/js/main.70eca94e.chunk.js",
     "main.js.map": "/reactjs-project-buposhop/static/js/main.70eca94e.chunk.js.map",
     "runtime-main.js": "/reactjs-project-buposhop/static/js/runtime-main.81d6346b.js",
@@ -12,7 +12,7 @@
     "static/js/3.af29cbc7.chunk.js.map": "/reactjs-project-buposhop/static/js/3.af29cbc7.chunk.js.map",
     "index.html": "/reactjs-project-buposhop/index.html",
     "static/css/2.4be38407.chunk.css.map": "/reactjs-project-buposhop/static/css/2.4be38407.chunk.css.map",
-    "static/css/main.2dfb094c.chunk.css.map": "/reactjs-project-buposhop/static/css/main.2dfb094c.chunk.css.map",
+    "static/css/main.0afc3bae.chunk.css.map": "/reactjs-project-buposhop/static/css/main.0afc3bae.chunk.css.map",
     "static/js/2.44688eda.chunk.js.LICENSE.txt": "/reactjs-project-buposhop/static/js/2.44688eda.chunk.js.LICENSE.txt",
     "static/media/mencollection.dc1d3dff.png": "/reactjs-project-buposhop/static/media/mencollection.dc1d3dff.png",
     "static/media/new-arrivals.661f2c9b.jpg": "/reactjs-project-buposhop/static/media/new-arrivals.661f2c9b.jpg",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.81d6346b.js",
     "static/css/2.4be38407.chunk.css",
     "static/js/2.44688eda.chunk.js",
-    "static/css/main.2dfb094c.chunk.css",
+    "static/css/main.0afc3bae.chunk.css",
     "static/js/main.70eca94e.chunk.js"
   ]
 }
