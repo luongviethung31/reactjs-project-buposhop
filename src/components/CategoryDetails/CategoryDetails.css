@@ -99,7 +99,7 @@
     /* height: 0;
     transition: height 0.4s;
     overflow: hidden; */
-    display: block;
+    display: none;
     animation: display 1s;
 }
 .filter-option-contents.activeFilter{
